@@ -40,6 +40,7 @@ const _handleTabSelection = (id, path) => {
     props.dispatch(saveSelectedTeamId(null));
     props.dispatch(saveSelectedMatchId(null));
     props.dispatch(saveSelectedTabId(id));
+    localStorage.setItem('selectedTabPath', path);
     setSelectedTab(id);
     props.history.push(path);
 };
