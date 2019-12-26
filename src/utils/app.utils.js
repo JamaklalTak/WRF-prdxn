@@ -1,5 +1,4 @@
 import moment from 'moment';
-require('moment/locale/es');
 
 import {
     DateConversionType
