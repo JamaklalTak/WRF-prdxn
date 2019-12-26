@@ -17,6 +17,7 @@ const Home = (props) => {
  
     const _handleMatchViewClick = (id) => {
         props.dispatch(saveSelectedMatchId(id));
+        localStorage.setItem('selectedTabPath', '/matches');
         props.history.push('/matches');
     };
 

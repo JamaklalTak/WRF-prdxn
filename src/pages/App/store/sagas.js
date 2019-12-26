@@ -25082,6 +25082,7 @@ function* getLoginWorker({ requestBody }) {
       && user.password === requestBody.password){
         localStorage.setItem('isUserLoggedIn', true);
         localStorage.setItem('userData', JSON.stringify(user));
+        localStorage.setItem('selectedTabPath', '/home');
         return user;
       }
       return false;
