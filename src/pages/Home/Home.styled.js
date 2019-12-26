@@ -3,11 +3,11 @@ import Theme, { dim } from '../../styles/theme';
 
 const HomeStyleContainer = Styled.div`
 display: flex;
-flex: 1;
 flex-wrap: wrap;
+width: 100%;
 height: 100%;
 align-items: center;
-justify-content: space-between;
+justify-content: center;
 
 .matchCard {
     display: flex;
