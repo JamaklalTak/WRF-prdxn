@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "author": "Jamak Lal Tak",
-  "license": "MIT",
+  "private": "true",
   "dependencies": {
     "connected-react-router": "^6.6.1",
     "cross-env": "^5.2.0",
