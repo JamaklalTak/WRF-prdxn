@@ -13,10 +13,12 @@ const Header = (props) => {
     props.dispatch(logOutUser());
     localStorage.removeItem('isUserLoggedIn');
     localStorage.removeItem('userData');
+    localStorage.removeItem('selectedTabPath');
   };
 
   const _handleLogoClick = () => {
     if(isUserLoggedIn){
+      localStorage.setItem('selectedTabPath', '/home');
       props.history.push('/home');
       props.dispatch(saveSelectedTabId(1));
     }
