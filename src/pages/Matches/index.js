@@ -28,6 +28,7 @@ const Matches = (props) => {
     const _handleTeamClick = (id) => {
         props.dispatch(saveSelectedTeamId(id));
         props.dispatch(saveSelectedMatchId(null));
+        localStorage.setItem('selectedTabPath', '/teams');
         props.history.push('/teams');
     };
 
