@@ -7,6 +7,7 @@ const Teams = lazy(() => import('../pages/Teams'));
 const Login = lazy(() => import('../pages/Login'));
 
 const Routes = (props) => {
+    const currentPath = localStorage != null ? localStorage.getItem('selectedTabPath') : '/home';
     return(
         <Suspense
         fallback={
@@ -22,7 +23,7 @@ const Routes = (props) => {
             <Route path='/home' component={Home} />
             <Route path='/matches' component={Matches} />
             <Route path='/teams' component={Teams} />
-            <Route path="/*" render={() => (<Redirect to='/home'/>)} />
+            <Route path="/*" render={() => (<Redirect to={currentPath}/>)} />
           </Switch>)
           :
           (<Switch>
