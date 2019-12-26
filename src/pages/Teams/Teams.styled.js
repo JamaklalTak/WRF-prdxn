@@ -3,9 +3,11 @@ import Theme, { dim } from '../../styles/theme';
 
 const TeamsStyleContainer = Styled.div`
 display: flex;
-flex: 1;
-justify-content: flex-start;
 flex-wrap: wrap;
+width: 100%;
+height: 100%;
+align-items: center;
+justify-content: center;
 
 .teamDetail {
     display: flex;
